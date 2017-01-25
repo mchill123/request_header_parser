@@ -7,8 +7,8 @@ var PORT = process.env.PORT || 3000;
 app.get('/', function(req, res){
     var ip = os.networkInterfaces();
     var soft = os.platform();
-    var lang = req.acceptsLanguage;
-    res.send(ip + soft + lang);
+    var lang = req.acceptsLanguages;
+    res.send(ip );
 });
 
 app.listen(PORT, function(){
