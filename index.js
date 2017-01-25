@@ -4,7 +4,7 @@ var app = express();
 var PORT = process.env.PORT || 3000;
 
 app.get('/', function(req, res){
-    var ip= req.ips;
+    var ip= req.ip;
     res.send(ip);
 });
 
