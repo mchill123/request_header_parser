@@ -4,8 +4,8 @@ var app = express();
 var PORT = process.env.PORT || 3000;
 
 app.get('/', function(req, res){
-    
-    res.send('hello world');
+    var info = os.cpus();
+    res.send(info);
 });
 
 app.listen(PORT, function(){
