@@ -1,0 +1,19 @@
+{
+  "name": "request_header_parser",
+  "version": "1.0.0",
+  "description": "Rewuest Header Parser",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mchill123/request_header_parser.git"
+  },
+  "author": "Mckinley Hill",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mchill123/request_header_parser/issues"
+  },
+  "homepage": "https://github.com/mchill123/request_header_parser#readme"
+}
