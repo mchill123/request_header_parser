@@ -8,7 +8,7 @@ app.get('/', function(req, res){
     var ip = os.networkInterfaces();
     var soft = os.platform();
     var lang = req.acceptsLanguages;
-    res.send(ip );
+    res.send(soft);
 });
 
 app.listen(PORT, function(){
