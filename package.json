@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/mchill123/request_header_parser/issues"
   },
-  "homepage": "https://github.com/mchill123/request_header_parser#readme"
+  "homepage": "https://github.com/mchill123/request_header_parser#readme",
+  "dependencies": {
+    "express": "^4.14.0",
+    "os": "^0.1.1"
+  }
 }
