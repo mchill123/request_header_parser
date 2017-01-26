@@ -4,6 +4,7 @@ var app = express();
 var PORT = process.env.PORT || 3000;
 
 app.get('/', function(req, res){
+    app.enable('trust proxy');
     var ip= req.ip;
     res.send(ip);
 });
