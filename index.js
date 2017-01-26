@@ -8,14 +8,21 @@ app.get('/', function(req, res){
 });
 
 app.listen(PORT, function(){
-    console.log('Listening on port: ' + PORT)
+    console.log('Listening on port: ' + PORT);
 });
 
 function getInfo(req){
     app.enable('trust proxy');
     var ip= req.ip;
     var lang = req.get('accept-language');
-    var soft = req.get('user-agent')
-    return(ip+"     "+soft+"     "+lang)
+    lang = lang.slice(0, lang.indexOf(','));
+    var soft = req.get('user-agent');
+    soft = soft.slice(soft.indexOf('(')+1, soft.indexOf(')'));
+    
+    var result = {'ipaddress': ip,
+    'language': lang,
+    'software' : soft
+    };
+    return(result);
     
 }
